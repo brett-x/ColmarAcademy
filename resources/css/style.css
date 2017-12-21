@@ -145,8 +145,6 @@ h2.main-story-headline {
 }
 
 
-
-
 .learning {
   background-color: #eaebec;
   display: flex;
@@ -181,7 +179,6 @@ h2.main-story-headline {
 .bottom-section {
   background-color: white;
   display: flex;
-
 }
 
 footer {
@@ -231,13 +228,14 @@ footer {
     display:none;
   }
   .side-story-image-mobile {
-    display: flex;
+    display: block;
     width: 100%;
   }
-  .side-story-image img{
-    padding: 0px;
+
+  .side-story-image-mobile img{
     margin: 16px;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
   .side-stories .featured {
     background-color: inherit;
@@ -262,11 +260,16 @@ footer {
   .bottom-section .side-stories, .bottom-section .story-text {
     display: none;
   }
-  .bottom-section .main-story {
-    /*display: block;*/
-    width: 100%;
 
+  .bottom-section .main-story {
+    width: 100%;
   }
+
+  main-story video {
+    width: 100%;
+    padding: 0px;
+  }
+
   footer ul {
     display: none;
   }
